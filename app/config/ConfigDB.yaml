@@ -1,0 +1,18 @@
+---
+#baza mysql
+mysql:
+  host: localhost    #opcjonalne
+  port: 3306         #opcjonalne
+  dbname: strona      #wymagane
+  user: Kortez       #wymagane
+  password: kortez   #wymagane
+
+#inny rodzaj bazy dabych
+jakaś baza dabych np PostgreSQL:
+  host:
+  port:
+  dbname:
+  user:
+  password:
+
+...
