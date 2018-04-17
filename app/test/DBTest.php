@@ -8,9 +8,7 @@
 
 namespace app\test;
 include_once(__DIR__.'/../model/DB.php');
-include_once (__DIR__.'/../interfaceDB.php');
 
-use app\interfaceDB;
 use app\model\DB;
 use PHPUnit\Framework\TestCase;
 
