@@ -15,13 +15,25 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="DBTest.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="DBTest.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/test/DBTest.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+            <state relative-caret-position="180">
+              <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
               <folding>
-                <element signature="e#154#171#0#PHP" expanded="true" />
+                <element signature="e#153#170#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="requestTest.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/test/requestTest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+              <folding>
+                <element signature="e#155#171#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -35,7 +47,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/test/requestTest.php" />
         <option value="$PROJECT_DIR$/app/config/ConfigDB.yaml" />
         <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/app/interface/interfaceController.php" />
@@ -47,6 +58,7 @@
         <option value="$PROJECT_DIR$/app/model/DB.php" />
         <option value="$PROJECT_DIR$/../WWW/Okna/index.php" />
         <option value="$PROJECT_DIR$/app/test/DBTest.php" />
+        <option value="$PROJECT_DIR$/app/test/requestTest.php" />
       </list>
     </option>
   </component>
@@ -114,6 +126,17 @@
               <item name="Root" type="cbb8eebc:String" user="Root" />
               <item name="strona" type="cbb8eebc:String" user="strona" />
             </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="strona" type="cbb8eebc:String" user="strona" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="strona" type="cbb8eebc:String" user="strona" />
+              <item name="app" type="cbb8eebc:String" user="app" />
+              <item name="test" type="cbb8eebc:String" user="test" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -168,7 +191,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHPUnit.requestTest">
+  <component name="RunManager" selected="PHPUnit.allTest">
     <configuration name="DBTest" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner class="app\test\DBTest" directory="$PROJECT_DIR$/app/test" file="$PROJECT_DIR$/app/test/DBTest.php" scope="Class" />
     </configuration>
@@ -204,32 +227,11 @@
       <workItem from="1523810802262" duration="10550000" />
       <workItem from="1523822394087" duration="2308000" />
       <workItem from="1523992500231" duration="772000" />
-      <workItem from="1523999967615" duration="233000" />
+      <workItem from="1523999967615" duration="1305000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="DBTest - 2018.04.15 at 21h 40m 37s.xml">
-      <configuration name="DBTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="DBTest - 2018.04.15 at 21h 41m 36s.xml">
-      <configuration name="DBTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="DBTest - 2018.04.15 at 22h 29m 41s.xml">
-      <configuration name="DBTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="DBTest - 2018.04.15 at 22h 30m 52s.xml">
-      <configuration name="DBTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="DBTest - 2018.04.15 at 22h 32m 17s.xml">
-      <configuration name="DBTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="DBTest - 2018.04.15 at 22h 37m 17s.xml">
-      <configuration name="DBTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
-    <history-entry file="DBTest - 2018.04.17 at 23h 15m 17s.xml">
-      <configuration name="DBTest" configurationId="PHPUnitRunConfigurationType" />
-    </history-entry>
     <history-entry file="DBTest - 2018.04.17 at 23h 21m 16s.xml">
       <configuration name="DBTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
@@ -239,12 +241,34 @@
     <history-entry file="requestTest - 2018.04.17 at 23h 22m 00s.xml">
       <configuration name="requestTest" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="requestTest - 2018.04.17 at 23h 29m 21s.xml">
+      <configuration name="requestTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="DBTest - 2018.04.17 at 23h 29m 23s.xml">
+      <configuration name="DBTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="DBTest - 2018.04.17 at 23h 38m 31s.xml">
+      <configuration name="DBTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="DBTest - 2018.04.17 at 23h 38m 37s.xml">
+      <configuration name="DBTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="DBTest - 2018.04.17 at 23h 39m 30s.xml">
+      <configuration name="DBTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="DBTest - 2018.04.17 at 23h 41m 28s.xml">
+      <configuration name="DBTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="allTest - 2018.04.17 at 23h 41m 31s.xml">
+      <configuration name="allTest" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34661000" />
+    <option name="totallyTimeSpent" value="35733000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1222" height="816" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2039801" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -252,7 +276,7 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32107496" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Terminal" order="7" />
@@ -284,7 +308,7 @@
         <state relative-caret-position="1420">
           <caret line="71" selection-start-line="71" selection-end-line="71" />
           <folding>
-            <element signature="e#154#171#0#PHP" expanded="true" />
+            <element signature="e#153#170#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -325,7 +349,7 @@
         <state relative-caret-position="1420">
           <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
           <folding>
-            <element signature="e#154#171#0#PHP" expanded="true" />
+            <element signature="e#153#170#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -342,7 +366,7 @@
         <state relative-caret-position="1240">
           <caret line="62" selection-start-line="62" selection-end-line="62" />
           <folding>
-            <element signature="e#154#171#0#PHP" expanded="true" />
+            <element signature="e#153#170#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -516,13 +540,6 @@
         <state relative-caret-position="-660" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/test/requestTest.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="28" column="82" selection-start-line="28" selection-start-column="82" selection-end-line="28" selection-end-column="82" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/ConfigDB.yaml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="100">
@@ -572,10 +589,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/test/DBTest.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+        <state relative-caret-position="180">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
           <folding>
-            <element signature="e#154#171#0#PHP" expanded="true" />
+            <element signature="e#153#170#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/test/requestTest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding>
+            <element signature="e#155#171#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

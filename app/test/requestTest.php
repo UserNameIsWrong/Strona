@@ -13,7 +13,7 @@ use app\request;
 use PHPUnit\Framework\TestCase;
 
 
-class requestTest extends \PHPUnit\Framework\TestCase
+class requestTest extends TestCase
 {
 
     public function testParseUrl()

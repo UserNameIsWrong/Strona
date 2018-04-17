@@ -12,7 +12,7 @@ include_once(__DIR__.'/../model/DB.php');
 use app\model\DB;
 use PHPUnit\Framework\TestCase;
 
-class DBTest extends \PHPUnit\Framework\TestCase
+class DBTest extends TestCase
 {
 
     public function testDBConstruct()
