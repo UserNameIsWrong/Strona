@@ -8,9 +8,4 @@
 
 echo "strona<br/>";
 
-require_once('app/model/DB.php');
-$db= new \app\model\DB();
-var_dump($db);
-
-$db->insertTestSite();
-
+require_once('app/request.php');

@@ -1,4 +1,4 @@
-
+//hrefy będą mają być generowane automatycznie
 <a class="nav" href="/index.php/O_nas"> O Nas </a>
 <a class="nav" href="/index.php/Oferta"> Oferta </a>
 <a class="nav" href="/index.php/Coś_tam"> Coś tam </a>

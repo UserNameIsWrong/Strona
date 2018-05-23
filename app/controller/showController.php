@@ -7,11 +7,9 @@
  */
 
 namespace app\controller;
-use app\interfaceController;
 
-require_once(__DIR__ . '/../interfaceController.php');
 
-class showController implements interfaceController
+class showController
 {
     public function action01()
     {

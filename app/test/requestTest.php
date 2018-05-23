@@ -7,7 +7,7 @@
  */
 
 namespace app\test;
-include(__dir__ . '/../model/request.php');
+include(__dir__ . '/../request.php');
 
 use app\request;
 use PHPUnit\Framework\TestCase;
@@ -39,30 +39,30 @@ class requestTest extends TestCase
     {
         $request = new request();
 
-        $this->assertEquals('showController', $request->getController('http://strona.local/index.php/O_nas'));
-        $this->assertEquals('showController', $request->getController('strona.local/index.php/Oferta'));
-        $this->assertEquals('showController', $request->getController('www.strona.local/index.php/Coś_tam'));
-        $this->assertEquals('showController', $request->getController('http://WWW.strona.local/index.php/cennik'));
-        $this->assertEquals('showController', $request->getController('index.php/O_nas'));
-        $this->assertEquals('showController', $request->getController('/index.php/Kontakt'));
-        $this->assertEquals('showController', $request->getController('http://WWW.strona.local/index.php/costamzle?id=12wer'));
-        $this->assertEquals('showController', $request->getController('/'));
-        $this->assertEquals('showController', $request->getController('index.php'));
-        $this->assertEquals('showController', $request->getController('index.php/'));
-        $this->assertEquals('showController', $request->getController('http://strona.local/index.php/'));
-        $this->assertEquals('showController', $request->getController('http://strona.local'));
-        $this->assertEquals('showController', $request->getController('http://strona.local/'));
-        $this->assertEquals('showController', $request->getController('http://www.strona.local/'));
-        $this->assertEquals('showController', $request->getController('WWW.strona.local'));
-        $this->assertEquals('showController', $request->getController(''));
+        $this->assertEquals('showController', $request->getControllerName('http://strona.local/index.php/O_nas'));
+        $this->assertEquals('showController', $request->getControllerName('strona.local/index.php/Oferta'));
+        $this->assertEquals('showController', $request->getControllerName('www.strona.local/index.php/Coś_tam'));
+        $this->assertEquals('showController', $request->getControllerName('http://WWW.strona.local/index.php/cennik'));
+        $this->assertEquals('showController', $request->getControllerName('index.php/O_nas'));
+        $this->assertEquals('showController', $request->getControllerName('/index.php/Kontakt'));
+        $this->assertEquals('showController', $request->getControllerName('http://WWW.strona.local/index.php/costamzle?id=12wer'));
+        $this->assertEquals('showController', $request->getControllerName('/'));
+        $this->assertEquals('showController', $request->getControllerName('index.php'));
+        $this->assertEquals('showController', $request->getControllerName('index.php/'));
+        $this->assertEquals('showController', $request->getControllerName('http://strona.local/index.php/'));
+        $this->assertEquals('showController', $request->getControllerName('http://strona.local'));
+        $this->assertEquals('showController', $request->getControllerName('http://strona.local/'));
+        $this->assertEquals('showController', $request->getControllerName('http://www.strona.local/'));
+        $this->assertEquals('showController', $request->getControllerName('WWW.strona.local'));
+        $this->assertEquals('showController', $request->getControllerName(''));
 
-        $this->assertEquals('updateController', $request->getController('http://strona.local/index.php/update/O_nas'));
-        $this->assertEquals('delateController', $request->getController('strona.local/index.php/delate/Oferta'));
-        $this->assertEquals('addController', $request->getController('www.strona.local/index.php/add/Cennik'));
-        $this->assertEquals('showController', $request->getController('http://WWW.strona.local/index.php/show/index'));
-        $this->assertEquals('updateController', $request->getController('index.php/update/Coś_tam'));
-        $this->assertEquals('delateController', $request->getController('/index.php/delate/Kontakt'));
-        $this->assertEquals('addController', $request->getController('http://WWW.strona.local/index.php/add/costamzle?id=12wer'));
+        $this->assertEquals('updateController', $request->getControllerName('http://strona.local/index.php/update/O_nas'));
+        $this->assertEquals('delateController', $request->getControllerName('strona.local/index.php/delate/Oferta'));
+        $this->assertEquals('addController', $request->getControllerName('www.strona.local/index.php/add/Cennik'));
+        $this->assertEquals('showController', $request->getControllerName('http://WWW.strona.local/index.php/show/index'));
+        $this->assertEquals('updateController', $request->getControllerName('index.php/update/Coś_tam'));
+        $this->assertEquals('delateController', $request->getControllerName('/index.php/delate/Kontakt'));
+        $this->assertEquals('addController', $request->getControllerName('http://WWW.strona.local/index.php/add/costamzle?id=12wer'));
 
     }
 

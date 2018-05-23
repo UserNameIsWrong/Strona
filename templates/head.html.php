@@ -6,8 +6,8 @@
     <meta name="description" content=" " />
     <meta name="keywords" content=" "/>
     <link type="text/css" rel="stylesheet" href="/css/main.css" >
-    <link type="text/css" rel="stylesheet" href="<? ?>" >
-    <title><? $this->getTitle() ?></title>
+    <link type="text/css" rel="stylesheet" href="<? /*getCSS*/ ?>" >
+    <title><? /*getTitle()*/ ?></title>
 </head>
 <body>
 <header>

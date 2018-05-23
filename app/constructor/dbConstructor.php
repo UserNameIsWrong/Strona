@@ -6,14 +6,16 @@
  * Time: 22:15
  */
 
-namespace app\model;
+namespace app\constructor;
+use app\constructor\Constructor;
 
 /**
- * Class DB
+ * Class dbConstructor
  * @package app\model
+ * Używany jako narzędzie pomocne w tworzeniu obiektu "page"
  * zawiera metody odpytujące baze danych
  */
-class DB
+class dbConstructor extends Constructor
 {
     protected $db;
 
@@ -30,15 +32,15 @@ class DB
         }
     }
 
-    public function getActionName(string $actionNumber)
+    public function getActionName(string $id)
     {
-        $query= "SELECT name FROM akcje where action='$actionNumber'";
+        $query= "SELECT actionName FROM strony where id=$id";
         if($wynik= $this->db->query($query)){
             if($wynik->rowCount() !==1){
                 return FALSE;
             }
             $w= $wynik->fetch(\PDO::FETCH_ASSOC);
-            return $w['name'];
+            return $w['actionName'];
         }
         else{
            // die("Execute query error, because: ". print_r($this->db->errorInfo(),FALSE) );
@@ -46,46 +48,14 @@ class DB
         }
     }
 
-    public function getActionNumber(string $actionName)
+
+    public function setActionName()
     {
-        $query= "select action from akcje where name='$actionName'";
-        if($wynik= $this->db->query($query)){
-            if($wynik->rowCount() !==1){
-                return FALSE;
-            }
-            $w= $wynik->fetch(\PDO::FETCH_ASSOC);
-            return $w['action'];
-        }else {
-            //die("Execute query error, because: " . print_r($this->db->errorInfo(), FALSE));
-            return FALSE;
-        }
+
     }
 
-    public function setActionName(string $actionNumber, string $newActionName)
-    {
-        if($actionNumber == 'kontakt'){
-            return FALSE;
-        }
-        if($actionName= $this->getActionName($actionNumber)){
-            if($actionName == $newActionName){
-                return TRUE;
-            }
-        }
-        $query= "update akcje set name= :newActionName where action= :actionNumber";
-        $sql= $this->db->prepare($query);
-        $sql->bindParam(':newActionName', $newActionName, \PDO::PARAM_STR);
-        $sql->bindParam(':actionNumber', $actionNumber, \PDO::PARAM_STR);
-        if(!$sql->execute()){
-            return FALSE;
-        }
-        if($sql->rowCount() !==1){
-            return FALSE;
-        }
-        return TRUE;
-    }
-
-    public function getActionTitle(string $actionNumber){
-        $query= "select title from strony where action='$actionNumber'";
+    public function getActionTitle(string $actionName){
+        $query= "select title from strony where actionName='$actionName'";
         if($wynik= $this->db->query($query)){
             echo 'rowCount '.$wynik->rowCount();
             if($wynik->rowCount() !== 1){
@@ -97,15 +67,6 @@ class DB
         }
     }
 
-    public function setActionTitle(){}
-
-    public function getActionMain(){}
-
-    public function setActionMain(){}
-
-    public function getActionCSS(){}
-
-    public function setActionCSS(){}
 
 
     public function get_db()
@@ -140,22 +101,26 @@ class DB
         return false;
     }
 
-    public function insertTestSite(){
+    public function insertTestDataBase(){
+
         $wynik= $this->db->query('select count(*) from strony');
-        if($wynik->fetch(\PDO::FETCH_NUM )[0] > 0){
+        if($wynik->fetch(\PDO::FETCH_NUM )[0] > 1){
             return TRUE;
         }
-        $wynik= $this->db->query('select action from akcje');
-       $sql= $this->db->prepare('insert into strony set action= ?, title= ?, main= ?, CSS= ?');
-        while($row= $wynik->fetch(\PDO::FETCH_ASSOC)) {
-            $action= $row['action'];
+       $sql= $this->db->prepare('insert into strony set actionName= ?, title= ?, main= ?, CSS= ?, js= ?');
+        for($i=1; $i<11; $i++) {
+            if ($i < 10) {
+                $action = "action0$i";
+            } else {
+            $action = "action$i";
+            }
             $main = serialize("<h3>$action</h3><p>Treść strony $action</p><p>dalsza treść</p>");
-            $sql->execute(array($action, "title $action", $main, "css/$action"));
+            $sql->execute(array($action, "title $action", $main, "css/$action", "js/$action"));
         }
         return TRUE;
     }
 
-    public function deleteTestSite(){
-        $this->db->exec('delete * from strony');
+    public function deleteTestDataBase(){
+        $this->db->exec("DELETE FROM strony WHERE id NOT IN (26)");
     }
 }

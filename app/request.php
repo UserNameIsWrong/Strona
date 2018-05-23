@@ -9,14 +9,9 @@
 namespace app;
 
 
-/**
- * Class request
- * @package app
- * zawiera metody obsługujace zapytania przegladarki
- */
+//Obiek request, przechowuje nazwę controlera, akcji i metodę zapytania przegladarki
  class request
 {
-
      /**
       * @param string $url
       * @return string
@@ -37,16 +32,16 @@ namespace app;
       * @return string
       * wyszukuje nazwę kontrolera z url wysłanego przez przegladarkę
       */
-    public function getController(string $url)
+    public function getControllerName(string $url)
     {
-        $pharse = $this->parseUrl($url);
-        $array = explode('/', $pharse);
+        $parse = $this->parseUrl($url);
+        echo $parse;
+        $array = explode('/', $parse);
         if (count($array) == 1) {
             return 'showController';
         } else {
-        }
         return $array[0] . 'Controller';
-    }
+    }}
 
      /**
       * @param string $url
@@ -55,15 +50,11 @@ namespace app;
       */
     public function getActionName(string $url)
     {
-        $pharse = $this->parseUrl($url);
-        $array = explode('/', $pharse);
+        $parse = $this->parseUrl($url);
+        $array = explode('/', $parse);
         $array2 = explode('?', end($array));
         return $array2[0];
 
     }
 
-    public function getActionNumber(string $actionName)
-    {
-
-    }
 }
