@@ -7,7 +7,7 @@
  */
 
 namespace app\test;
-include(__dir__ . '/../request.php');
+//include(__dir__ . '/../request.php');
 
 use app\request;
 use PHPUnit\Framework\TestCase;

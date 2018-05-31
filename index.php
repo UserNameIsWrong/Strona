@@ -8,4 +8,6 @@
 
 echo "strona<br/>";
 
-require_once('app/request.php');
+require_once 'vendor/autoload.php';
+
+new app\controller\test();

@@ -13,7 +13,7 @@ Abstract class Constructor
 {
 //metody abstrakcyjne, które mają zawierać potomne clasy constructor. potrzebne do twożenia pobiektu page
 
-   abstract public function getActionName();
+   abstract public function getActionName(string $id);
 
    abstract public function getActionId();
 
